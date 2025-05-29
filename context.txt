@@ -1,0 +1,13 @@
+PhpIFT³ is a PHP library to follow the "If This Then That" idea, to build a queue of macro operations.
+
+The project consist to create a set of classes to implent the "if this then that" paradigma.
+The main class is `IFT`, this class will be the core of the library, and will expose 4 methods:
+- `chain(name)`: to define a new chain of operations.
+- `ifThis(chain_name, function|class method, parameters)`: to define the return of a function or a class method to be checked, it save data retuned in an dedicated structure
+- `thanThat(chain_name, function|class method, parameters)`: run function or class method using parameters passed as 3rd parameters.
+- `run(chain_name)`: run the ifThis of the corresponding chain_name and if it return true, then run thanThat
+
+The second class is IFTCron that run the IFT chain in the time specified. It has 3 methods:
+- `runChain(chain_name, minute, hour, day, month, day_week)`: add a new chain to the cron.
+- `startIFTCron()`: do a while true loop checking the time and run the chain if the time is correct. Put a sleep of 2 second on each loop at the end.
+- `stopIFTCron()`: stop the while true loop.

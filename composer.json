@@ -1,0 +1,18 @@
+{
+  "name": "francesco/phpift3",
+  "description": "A PHP library to implement the 'If This Then That' paradigm for building a queue of macro operations.",
+  "type": "library",
+  "require": {
+    "php": ">=7.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "PhpIFT\\": "src/"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5"
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
