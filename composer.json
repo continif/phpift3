@@ -3,7 +3,7 @@
   "description": "A PHP library to implement the 'If This Then That' paradigm for building a queue of macro operations.",
   "type": "library",
   "require": {
-    "php": ">=7.2"
+    "php": ">=8.0"
   },
   "autoload": {
     "psr-4": {
